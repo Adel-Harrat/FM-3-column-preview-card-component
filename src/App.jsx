@@ -41,7 +41,7 @@ const data = [
 
 const App = () => {
   return (
-    <div className="min-h-screen grid place-items-center">
+    <div className="min-h-screen grid place-items-center bg-white-transparent">
       <main className="rounded-lg overflow-hidden m-5 md:grid md:grid-cols-3 md:max-w-4xl">
         {data.map((column) => (
           <article
@@ -59,7 +59,7 @@ const App = () => {
             </p>
 
             <a
-              className={`mt-8 md:mt-20 inline-block bg-white-light ${column.colorClass} font-lexend-deca text-sm px-6 py-3 md:px-8 md:py-3.5 rounded-3xl`}
+              className={`mt-8 md:mt-20 inline-block bg-white-light ${column.colorClass} font-lexend-deca text-sm px-6 py-3 md:px-8 rounded-3xl md:mb-6 hover:bg-transparent hover:text-white-light border-solid border-2 border-transparent hover:border-white-transparent transition-all ease-in-out duration-300`}
               href={column.link.href}
             >
               {column.link.value}
